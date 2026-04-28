@@ -57,30 +57,33 @@ This system enables researchers to conduct user studies involving conversational
 ---
 ## Project Structure
 
+## Project Structure
+
+```text
 dissertation-poc/
-│
 ├── backend/
-│   ├── data/                  # Personas, assignments, leakage config
-│   ├── prisma/                # Database schema & migrations
-│   ├── python/                # PII detection scripts
-│   ├── results/               # Analysis outputs (figures, tables)
-│   ├── scripts/               # Data processing & export scripts
+│   ├── data/              # Personas, assignments, leakage config
+│   ├── prisma/            # Database schema & migrations
+│   ├── python/            # PII detection scripts
+│   ├── results/           # Analysis outputs (figures, tables)
+│   ├── scripts/           # Data processing & export scripts
 │   ├── src/
-│   │   ├── controllers/       # API logic
-│   │   ├── services/          # Core logic (LLM, detection, enforcement)
-│   │   ├── routes/            # API endpoints
-│   │   ├── middleware/        # Validation, error handling
-│   │   └── server.js          # Entry point
-│   ├── test/                  # Unit & integration tests
+│   │   ├── controllers/   # API logic
+│   │   ├── services/      # LLM, detection, enforcement
+│   │   ├── routes/        # API endpoints
+│   │   └── middleware/    # Validation & error handling
+│   ├── test/             # Unit / integration tests
+│   ├── server.js
 │   └── package.json
 │
-├── frontend/                  # React application (user study interface)
-│   ├── components/            # UI components (chat, consent, survey)
-│   ├── services/              # API communication
+├── frontend/
+│   ├── components/        # Consent, chat, survey UI
+│   ├── services/          # API communication
 │   └── App.jsx
 │
 ├── README.md
 └── .gitignore
+```
 
 ---
 
