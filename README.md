@@ -57,8 +57,6 @@ This system enables researchers to conduct user studies involving conversational
 ---
 ## Project Structure
 
-## Project Structure
-
 ```text
 dissertation-poc/
 ├── backend/
