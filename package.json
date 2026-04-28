@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "remark-breaks": "^4.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^9.7.0",
+    "eslint-config-prettier": "^10.1.8",
+    "prettier": "^3.8.1"
+  },
+  "scripts": {
+    "format": "prettier --write ."
+  }
+}

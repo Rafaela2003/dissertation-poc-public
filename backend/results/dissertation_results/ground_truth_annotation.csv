@@ -1,0 +1,51 @@
+id,templatedPrompt,piiCategoriesDetected,enforcementAction,blockReason,blockCategory
+440270a2-57f6-4038-831f-cc0508ca846a,[BLOCKED],EXTERNAL_IDENTIFIER,blocked,"Your message contains personal information (""college"") that does not match your assigned persona. Please use only the details from your persona profile.",external_identifier
+8c0eab26-5702-4469-8e5c-2afab9f10c7c,What is usually included in the methodology for case study dissertation,,allowed,,
+594a7a6b-ce47-4b11-aaff-0fb0eb443d62,A portion gets sent to my bank account [DATE].,DATE,allowed,,
+0acdb283-2270-405f-9190-6148d8bb2d62,"When I was treated, I was taught to walk again.",,allowed,,
+103024a2-e876-4ad3-b82d-68b65a8834fb,"I earn £[MONEY], it is paid into 56740923 [DATE]","DATE,MONEY",allowed,,
+ede0c4be-d642-446b-81c9-1aef04743de7,What the hell,,allowed,,
+057417d8-55ea-4ab9-bf83-b073924dbc60,[BLOCKED],EXTERNAL_IDENTIFIER,blocked,"Your message contains personal information (""degree"") that does not match your assigned persona. Please use only the details from your persona profile.",external_identifier
+82712956-a412-42bf-8f41-ff1e2a1cf64b,[DATE] gets sent to 78350923,DATE,allowed,,
+7bc7e3c6-ebe3-4b61-a3d5-39793e53e31d,Can you give me negotiation advice,,allowed,,
+c25c6a21-a250-48f8-8579-f42991d4f617,I'm a lecturer.,,allowed,,
+897dbcce-107b-4d46-90ee-dc521d70f69b,The football,,allowed,,
+845a8632-f744-46d4-9b6b-91dbdac9d8c9,[BLOCKED],EXTERNAL_IDENTIFIER,blocked,"Your message contains personal information (""Media Ltd"") that does not match your assigned persona. Please use only the details from your persona profile.",external_identifier
+9a5e5617-427e-4c22-a6ac-09799a4248d2,0141 628,,allowed,,
+09238c1b-9be0-4e1f-8d79-859fe35dde32,[BLOCKED],EXTERNAL_IDENTIFIER,blocked,"Your message contains personal information (""CCSC"") that does not match your assigned persona. Please use only the details from your persona profile.",external_identifier
+d9db6c97-1d74-42ce-90b5-9aa64ffeaf73,My number is [PHONE],CODE,allowed,,
+024fadae-cf10-4bb2-b625-6d0ce4a1a261,I want money,,allowed,,
+7b90b69c-2823-4d04-be53-64218b3b81df,"I’m good, uhh just pretty much doing assignment work",,allowed,,
+b999c170-272f-4c6e-b248-107fcfbd1c4a,[BLOCKED],EXTERNAL_IDENTIFIER,blocked,"Your message contains personal information (""an accident"") that does not match your assigned persona. Please use only the details from your persona profile.",external_identifier
+c6c89c13-41aa-491b-a7e3-536a9c12f884,[BLOCKED],EXTERNAL_IDENTIFIER,blocked,"Your message contains personal information (""Masters"") that does not match your assigned persona. Please use only the details from your persona profile.",external_identifier
+d56022ab-c2fb-46b6-a5d7-8ca584dd0fa6,I'm trying to find out who called me,,allowed,,
+811577dd-8125-4696-8062-0f44c26de1a3,Just wanted to tell yoy,,allowed,,
+6ffe0886-0ebd-4574-93a2-136ae653b26e,[BLOCKED],EXTERNAL_IDENTIFIER,blocked,"Your message contains personal information (""the postcodes"") that does not match your assigned persona. Please use only the details from your persona profile.",external_identifier
+1e657c7d-13f4-406f-a68b-1a29cd62ad85,[BLOCKED],EXTERNAL_IDENTIFIER,blocked,"Your message contains personal information (""a mechanical engineering course"") that does not match your assigned persona. Please use only the details from your persona profile.",external_identifier
+112b0f8a-0173-4d06-9dc2-01e745a30277,Hello,,allowed,,
+228362f8-7105-4fde-ac28-2abc598600fa,[BLOCKED],POLITICAL,blocked,This message contains political beliefs or affiliations that cannot be processed. Please avoid sharing your political views.,political
+67fcc0c3-1bb3-4581-a369-fca72df7544a,Credit card details,,allowed,,
+97015c8e-e71f-43c3-8000-1c896c561761,Is a lit review necessary for a case study based dissertation,,allowed,,
+9de34d38-cc69-4996-acde-22200055716f,[BLOCKED],HEALTH,blocked,"This message contains health-related information that cannot be processed. Please avoid sharing information about medical conditions, diagnoses, or treatments.",health
+1b020652-aa95-4a23-a80b-d8bc42c61dd4,[BLOCKED],HEALTH,blocked,"This message contains health-related information that cannot be processed. Please avoid sharing information about medical conditions, diagnoses, or treatments.",health
+fd0725ad-00d8-40dc-b6c5-8710c22b1e2b,Interesting,,allowed,,
+93ea31ea-b3cd-4726-b230-6641612b395b,I'm fine,,allowed,,
+3a75cfdb-0f64-4a9b-9a69-729deee1221e,What does funding involve in UK,,allowed,,
+423d76ad-8b15-4e3c-9284-c127c2fa2f52,how do i make my video production and social media marketing portfolio stand out?,,allowed,,
+0f779263-aa43-4863-9376-2a0165de7708,My email is [EMAIL],EMAIL,allowed,,
+40bfd35d-6158-464e-8702-05980eebe5e4,Thank you so much,,allowed,,
+c735f4d1-4f04-4e94-b75f-177db8888df8,[BLOCKED],PER,blocked,"Your message contains personal information (""Birmingham Community"") that does not match your assigned persona. Please use only the details from your persona profile.",PERSON
+c4d7383c-e936-4f0d-9a59-db7ea5631c87,how do i make it stand out?,,allowed,,
+5835ca4e-6a18-4586-8758-f91ffa82f84a,how can I do that at my law firm?,,allowed,,
+aa0dad39-15d7-47a0-bd75-8afd6d6620d8,553,,allowed,,
+3f4807bf-b1ef-46e3-afc6-383209a8e83f,[BLOCKED],POLITICAL,blocked,This message contains political beliefs or affiliations that cannot be processed. Please avoid sharing your political views.,political
+15042dfe-42a2-4fc9-879d-e1e388ee2a39,£[MONEY],MONEY,allowed,,
+1d17e9ba-17bf-413d-9444-f3b7970fb32b,[BLOCKED],EXTERNAL_IDENTIFIER,blocked,"Your message contains personal information (""UK"") that does not match your assigned persona. Please use only the details from your persona profile.",external_identifier
+40415ccd-e5aa-4746-bfed-fab7643b107d,I’m just wondering if you have any resources about learning video production,,allowed,,
+4e667b9c-07c3-4b55-962b-3d6a375dfcdc,Has the code [DATE],DATE,allowed,,
+eb28ae3d-d9be-4d8e-8a27-5fe584849d13,[DATE] is sent to 64282848 [DATE],"DATE,DATE",allowed,,
+d8efab04-79e6-42d7-a536-a604a0f921a0,[BLOCKED],EXTERNAL_IDENTIFIER,blocked,"Your message contains personal information (""a senior leadership role"") that does not match your assigned persona. Please use only the details from your persona profile.",external_identifier
+80e6b3f1-4b31-47b8-9d15-59345f97c959,[BLOCKED],EXTERNAL_IDENTIFIER,blocked,"Your message contains personal information (""Digital Content Producer"") that does not match your assigned persona. Please use only the details from your persona profile.",external_identifier
+ed94c320-46f9-481e-ac0f-67d6aa0297f9,How can I expand my work at my current organization as a senior partner of a firm,,allowed,,
+47d44ae9-90ae-4ab7-b065-a0fcf9b352ac,I live in [LOC],LOC,allowed,,
+fb0d4ce2-2384-4453-9367-6312bbf15657,[BLOCKED],EXTERNAL_IDENTIFIER,blocked,"Your message contains personal information (""Marketing"") that does not match your assigned persona. Please use only the details from your persona profile.",external_identifier

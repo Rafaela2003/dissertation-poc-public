@@ -1,0 +1,119 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Persona {
+  id        Int      @id @default(autoincrement())
+  data      Json
+  createdAt DateTime @default(now())
+  
+  sessions  ExperimentSession[]
+}
+
+model ExperimentSession {
+  id                String   @id @default(uuid())
+  
+  // Participant flow
+  infoSheetViewed   Boolean  @default(false)
+  infoSheetViewedAt DateTime?
+  
+  consentGiven      Boolean  @default(false)
+  consentGivenAt    DateTime?
+  consentDeclined   Boolean  @default(false)
+  consentDeclinedAt DateTime?
+  
+  chatStarted       Boolean  @default(false)
+  chatStartedAt     DateTime?
+  chatEndedAt       DateTime?
+  
+  withdrew          Boolean  @default(false)
+  withdrawnAt       DateTime?
+  
+  surveyCompleted   Boolean  @default(false)
+  surveyCompletedAt DateTime?
+  
+  // Linked data
+  personaId         Int?
+  persona           Persona? @relation(fields: [personaId], references: [id])
+  
+  interactions      Interaction[]
+  surveyResponses   SurveyResponse[]
+  
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+}
+
+model Interaction {
+  id                   String   @id @default(uuid())
+  sessionId            String
+  session              ExperimentSession @relation(fields: [sessionId], references: [id], onDelete: Cascade)
+  
+  templatedPrompt      String
+  templatedResponse    String
+  
+  enforcementAction    String
+  blockReason          String?
+  blockCategory        String?
+  piiCategoriesDetected String[]
+  
+  promptTokens         Int?
+  responseTokens       Int?
+  totalTokens          Int?
+  modelUsed            String?
+  responseTime         Int?
+  
+  errorOccurred        Boolean  @default(false)
+  errorMessage         String?
+  
+  createdAt            DateTime @default(now())
+}
+
+model SurveyResponse {
+  id                String   @id @default(uuid())
+  sessionId         String
+  session           ExperimentSession @relation(fields: [sessionId], references: [id], onDelete: Cascade)
+  
+  questionId        String
+  questionText      String
+  questionType      String   // 'likert', 'multiple_choice', 'text'
+  response          String
+  
+  createdAt         DateTime @default(now())
+}
+
+model ConsentStatement {
+  id        Int      @id @default(autoincrement())
+  text      String
+  required  Boolean  @default(true)
+  order     Int
+  active    Boolean  @default(true)
+  
+  createdAt DateTime @default(now())
+}
+
+model InformationSheet {
+  id        Int      @id @default(autoincrement())
+  title     String
+  content   String   @db.Text
+  active    Boolean  @default(true)
+  
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model SurveyQuestion {
+  id           Int      @id @default(autoincrement())
+  questionText String
+  questionType String   // 'likert', 'multiple_choice', 'text'
+  options      Json?    // For likert/multiple choice
+  required     Boolean  @default(true)
+  order        Int
+  active       Boolean  @default(true)
+  
+  createdAt    DateTime @default(now())
+}

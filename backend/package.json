@@ -1,0 +1,54 @@
+{
+  "name": "dissertation-poc",
+  "version": "1.0.0",
+  "description": "Backend API for LLM privacy research dissertation",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate deploy",
+    "prisma:studio": "prisma studio",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "test:watch": "node --experimental-vm-modules node_modules/jest/bin/jest.js --watch",
+    "test:coverage": "node --experimental-vm-modules node_modules/jest/bin/jest.js --coverage",
+    "test:persona": "node --experimental-vm-modules node_modules/jest/bin/jest.js test/personaAssignment.test.js",
+    "test:pii": "node --experimental-vm-modules node_modules/jest/bin/jest.js test/piiDetection.test.js",
+    "test:functional": "node --experimental-vm-modules node_modules/jest/bin/jest.js test/functional.test.js"
+  },
+  "keywords": [
+    "privacy",
+    "llm",
+    "research"
+  ],
+  "author": "Rafaela Amado",
+  "license": "MIT",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.80.0",
+    "@prisma/client": "^6.19.2",
+    "axios": "^1.7.9",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.4.1",
+    "helmet": "^8.0.0",
+    "json2csv": "^6.0.0-alpha.2",
+    "node-fetch": "^2.7.0",
+    "prisma": "^6.12.0",
+    "uuid": "^11.0.3"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "@types/jest": "^30.0.0",
+    "jest": "^30.3.0",
+    "nodemon": "^3.1.9",
+    "supertest": "^7.2.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "prisma": {
+    "seed": "node prisma/seed.js"
+  }
+}

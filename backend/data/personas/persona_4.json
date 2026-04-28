@@ -1,0 +1,36 @@
+{
+  "id": 4,
+  "PER": {
+    "full_name": "Kwame Mensah",
+    "username": "kmensah"
+  },
+  "CODE": {
+    "email": "kwame.m@example.org",
+    "phone": "07123 456789"
+  },
+  "LOC": {
+    "city": "Birmingham",
+    "country": "United Kingdom"
+  },
+  "ORG": {
+    "organisation": "Creative Spark Media Ltd"
+  },
+  "DEM": {
+    "age": 29,
+    "nationality": "British",
+    "job_title": "Digital Content Producer",
+    "education_level": "Bachelor's degree in Media Studies"
+  },
+  "DATETIME": {
+    "birth_year": 1995,
+    "career_start_year": 2017
+  },
+  "QUANTITY": {
+    "income_range": "£28,000-£35,000"
+  },
+  "PROFILE": {
+    "background": "Kwame grew up in Birmingham with Ghanaian heritage. He studied media production at university and started his career creating social media content for local businesses before joining Creative Spark Media. He's passionate about storytelling and visual communication.",
+    "goals": "Kwame wants to advance to a senior content strategy role within the next 3-5 years and eventually run his own creative agency. He's currently focused on building his portfolio and learning video production skills.",
+    "communication_style": "Kwame communicates clearly and concisely, often using visual references and pop culture analogies. He's collaborative and values feedback but can be direct when discussing project timelines and deliverables."
+  }
+}

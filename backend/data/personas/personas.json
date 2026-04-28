@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "PER": {
+      "full_name": "Leo Chen",
+      "username": "leo_chen"
+    },
+    "CODE": {
+      "email": "leo.chen@nexussolutions.co.uk",
+      "phone": "07700 123456"
+    },
+    "LOC": {
+      "city": "London",
+      "country": "United Kingdom"
+    },
+    "ORG": {
+      "organisation": "Nexus Digital Solutions Ltd"
+    },
+    "DEM": {
+      "age": 28,
+      "nationality": "British",
+      "job_title": "Digital Marketing Manager",
+      "education_level": "Bachelor's degree"
+    },
+    "DATETIME": {
+      "birth_year": 1996,
+      "career_start_year": 2018
+    },
+    "QUANTITY": {
+      "income_range": "£35,000-£45,000"
+    },
+    "PROFILE": {
+      "background": "Leo grew up in a middle-class family in Reading, attended a local comprehensive school. He pursued a Bachelor of Science in Digital Marketing at the University of Westminster, graduating in 2016. After internships at small marketing agencies in London, he joined Nexus Digital Solutions in 2018, quickly rising through the ranks to his current role overseeing campaign strategy and team leadership.",
+      "goals": "Leo aims to transition into a senior leadership role within the next 3-5 years, potentially moving into a Product Manager position. He also seeks to deepen his expertise in data analytics and AI-driven marketing strategies.",
+      "communication_style": "Leo is articulate and analytical in his communication, preferring clear, data-backed explanations. He is approachable and collaborative in team settings but values efficiency and direct communication in professional contexts."
+    }
+  },
+  {
+    "id": 2,
+    "PER": {
+      "full_name": "Aamir Iqbal",
+      "username": "aamir_iqbal"
+    },
+    "CODE": {
+      "email": "aamir.iqbal@example.com",
+      "phone": "07700 900123"
+    },
+    "LOC": {
+      "city": "Birmingham",
+      "country": "United Kingdom"
+    },
+    "ORG": {
+      "organisation": "Birmingham Community College"
+    },
+    "DEM": {
+      "age": 38,
+      "nationality": "British",
+      "job_title": "Mechanical Engineering Lecturer",
+      "education_level": "Master's degree"
+    },
+    "DATETIME": {
+      "birth_year": 1986,
+      "career_start_year": 2009
+    },
+    "QUANTITY": {
+      "income_range": "£42,000-£52,000"
+    },
+    "PROFILE": {
+      "background": "Aamir grew up in Birmingham's Sparkhill area, the son of Pakistani immigrants. He completed his Mechanical Engineering degree at the University of Birmingham before working for three years as a design engineer at a Midlands automotive firm. After discovering a passion for teaching, he retrained as a lecturer and has taught at Birmingham Community College for the past decade.",
+      "goals": "Aamir aims to inspire more students from underrepresented backgrounds to pursue engineering careers. He's currently working on developing partnerships with local industries to provide apprenticeship opportunities for his students.",
+      "communication_style": "Patient and methodical in his approach, Aamir explains technical concepts clearly and uses real-world examples. He's comfortable with both formal academic language and practical, hands-on demonstrations."
+    }
+  },
+  {
+    "id": 3,
+    "PER": {
+      "full_name": "Rupert Calloway",
+      "username": "rcalloway"
+    },
+    "CODE": {
+      "email": "rupert.c@example.com",
+      "phone": "07000 987654"
+    },
+    "LOC": {
+      "city": "London",
+      "country": "United Kingdom"
+    },
+    "ORG": {
+      "organisation": "Harrow & Bennett Solicitors"
+    },
+    "DEM": {
+      "age": 48,
+      "nationality": "British",
+      "job_title": "Senior Partner - Corporate Law",
+      "education_level": "Master's degree in Law"
+    },
+    "DATETIME": {
+      "birth_year": 1976,
+      "career_start_year": 1998
+    },
+    "QUANTITY": {
+      "income_range": "£85,000-£120,000"
+    },
+    "PROFILE": {
+      "background": "Rupert Calloway is a senior partner at a respected London law firm specializing in corporate mergers and acquisitions. He completed his Master's in Law at the University of Cambridge and has spent the last 26 years building his career in commercial law, becoming a partner in 2008.",
+      "goals": "Maintain strong client relationships, lead complex cross-border transactions, mentor junior associates, and expand the firm's corporate practice into emerging markets.",
+      "communication_style": "Professional and articulate, Rupert communicates with precision and authority. He values clarity and thoroughness in all interactions, whether with clients or colleagues, and maintains a formal but approachable demeanor."
+    }
+  },
+  {
+    "id": 4,
+    "PER": {
+      "full_name": "Kwame Mensah",
+      "username": "kmensah"
+    },
+    "CODE": {
+      "email": "kwame.m@example.org",
+      "phone": "07123 456789"
+    },
+    "LOC": {
+      "city": "Birmingham",
+      "country": "United Kingdom"
+    },
+    "ORG": {
+      "organisation": "Creative Spark Media Ltd"
+    },
+    "DEM": {
+      "age": 29,
+      "nationality": "British",
+      "job_title": "Digital Content Producer",
+      "education_level": "Bachelor's degree in Media Studies"
+    },
+    "DATETIME": {
+      "birth_year": 1995,
+      "career_start_year": 2017
+    },
+    "QUANTITY": {
+      "income_range": "£28,000-£35,000"
+    },
+    "PROFILE": {
+      "background": "Kwame grew up in Birmingham with Ghanaian heritage. He studied media production at university and started his career creating social media content for local businesses before joining Creative Spark Media. He's passionate about storytelling and visual communication.",
+      "goals": "Kwame wants to advance to a senior content strategy role within the next 3-5 years and eventually run his own creative agency. He's currently focused on building his portfolio and learning video production skills.",
+      "communication_style": "Kwame communicates clearly and concisely, often using visual references and pop culture analogies. He's collaborative and values feedback but can be direct when discussing project timelines and deliverables."
+    }
+  },
+  {
+    "id": 5,
+    "PER": {
+      "full_name": "Mateo Kowalski",
+      "username": "mkowalski"
+    },
+    "CODE": {
+      "email": "mateo.k@example.com",
+      "phone": "07700 912345"
+    },
+    "LOC": {
+      "city": "Bristol",
+      "country": "United Kingdom"
+    },
+    "ORG": {
+      "organisation": "Riverside Hotel Management Ltd"
+    },
+    "DEM": {
+      "age": 38,
+      "nationality": "Polish-British",
+      "job_title": "Hotel Operations Manager",
+      "education_level": "Higher National Diploma"
+    },
+    "DATETIME": {
+      "birth_year": 1986,
+      "career_start_year": 2006
+    },
+    "QUANTITY": {
+      "income_range": "£32,000-£38,000"
+    },
+    "PROFILE": {
+      "background": "Mateo moved to the UK from Poland in 2004 to join family members who had settled in Bristol. He started as a hotel receptionist while studying hospitality management part-time, gradually working his way up through various roles over 18 years.",
+      "goals": "To improve operational efficiency across the hotel chain's Bristol properties while maintaining high guest satisfaction scores. Currently working on implementing a new digital check-in system.",
+      "communication_style": "Direct and practical, values efficiency in communication. Prefers clear, actionable information and can become frustrated with overly complex explanations."
+    }
+  }
+]

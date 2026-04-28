@@ -1,0 +1,36 @@
+{
+  "id": 5,
+  "PER": {
+    "full_name": "Mateo Kowalski",
+    "username": "mkowalski"
+  },
+  "CODE": {
+    "email": "mateo.k@example.com",
+    "phone": "07700 912345"
+  },
+  "LOC": {
+    "city": "Bristol",
+    "country": "United Kingdom"
+  },
+  "ORG": {
+    "organisation": "Riverside Hotel Management Ltd"
+  },
+  "DEM": {
+    "age": 38,
+    "nationality": "Polish-British",
+    "job_title": "Hotel Operations Manager",
+    "education_level": "Higher National Diploma"
+  },
+  "DATETIME": {
+    "birth_year": 1986,
+    "career_start_year": 2006
+  },
+  "QUANTITY": {
+    "income_range": "£32,000-£38,000"
+  },
+  "PROFILE": {
+    "background": "Mateo moved to the UK from Poland in 2004 to join family members who had settled in Bristol. He started as a hotel receptionist while studying hospitality management part-time, gradually working his way up through various roles over 18 years.",
+    "goals": "To improve operational efficiency across the hotel chain's Bristol properties while maintaining high guest satisfaction scores. Currently working on implementing a new digital check-in system.",
+    "communication_style": "Direct and practical, values efficiency in communication. Prefers clear, actionable information and can become frustrated with overly complex explanations."
+  }
+}

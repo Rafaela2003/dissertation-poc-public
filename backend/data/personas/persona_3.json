@@ -1,0 +1,36 @@
+{
+  "id": 3,
+  "PER": {
+    "full_name": "Rupert Calloway",
+    "username": "rcalloway"
+  },
+  "CODE": {
+    "email": "rupert.c@example.com",
+    "phone": "07000 987654"
+  },
+  "LOC": {
+    "city": "London",
+    "country": "United Kingdom"
+  },
+  "ORG": {
+    "organisation": "Harrow & Bennett Solicitors"
+  },
+  "DEM": {
+    "age": 48,
+    "nationality": "British",
+    "job_title": "Senior Partner - Corporate Law",
+    "education_level": "Master's degree in Law"
+  },
+  "DATETIME": {
+    "birth_year": 1976,
+    "career_start_year": 1998
+  },
+  "QUANTITY": {
+    "income_range": "£85,000-£120,000"
+  },
+  "PROFILE": {
+    "background": "Rupert Calloway is a senior partner at a respected London law firm specializing in corporate mergers and acquisitions. He completed his Master's in Law at the University of Cambridge and has spent the last 26 years building his career in commercial law, becoming a partner in 2008.",
+    "goals": "Maintain strong client relationships, lead complex cross-border transactions, mentor junior associates, and expand the firm's corporate practice into emerging markets.",
+    "communication_style": "Professional and articulate, Rupert communicates with precision and authority. He values clarity and thoroughness in all interactions, whether with clients or colleagues, and maintains a formal but approachable demeanor."
+  }
+}

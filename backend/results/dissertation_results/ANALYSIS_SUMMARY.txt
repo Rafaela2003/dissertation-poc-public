@@ -1,0 +1,34 @@
+======================================================================
+RESEARCH STUDY ANALYSIS SUMMARY
+======================================================================
+
+1. PARTICIPANT OVERVIEW
+   Total Sessions: 34
+   Completion Rate: 38.2%
+   Average Interactions: 13.83
+   Average Duration: 14.44 min
+
+2. PRIVACY LEAKAGE
+   Interaction Leakage Rate: 45.2%
+   Session Leakage Rate: 66.7%
+   Most Common PII: EXTERNAL_IDENTIFIER
+
+3. PII CATEGORIES
+   EXTERNAL_IDENTIFIER: 43 (53.8%)
+   PER: 11 (13.8%)
+   DATE: 9 (11.2%)
+   CODE: 4 (5.0%)
+   MONEY: 3 (3.8%)
+   EMAIL: 3 (3.8%)
+   LOC: 2 (2.5%)
+   HEALTH: 2 (2.5%)
+   POLITICAL: 2 (2.5%)
+   JOB: 1 (1.2%)
+
+4. DIRECT VS INDIRECT LEAKAGE
+   Direct: 75 (45.2%)
+   Indirect: 32 (19.3%)
+
+======================================================================
+All visualizations saved in dissertation_results/
+======================================================================

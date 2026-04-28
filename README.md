@@ -1,0 +1,328 @@
+# An Investigation of Privacy Leakage in Human-Chatbot Interactions
+
+This is a privacy-preserving conversational AI system for conducting user research studies with automated PII detection and persona-based experimental design.
+
+---
+
+## Table of Contents
+
+- [Overview](#overview)
+- [Features](#features)
+- [Project Structure](#project-structure)
+- [Architecture](#architecture)
+- [Installation](#installation)
+- [Configuration](#configuration)
+- [Usage](#usage)
+- [Testing](#testing)
+- [Results](#results)
+- [Privacy & Security](#privacy--security)
+- [API Documentation](#api-documentation)
+
+
+---
+
+## Overview
+
+This system enables researchers to conduct user studies involving conversational AI while maintaining strict privacy controls. Participants are assigned fictional personas and interact with an AI chatbot while the system automatically detects and blocks attempts to share real personal information.
+
+### Key Capabilities
+
+- Persona-Based Testing: Randomly assigns participants one of five fictional personas
+- Real-Time PII Detection: Identifies and blocks personal information leakage
+- Timed Sessions: 8-minute chat sessions with automatic progression
+- Privacy-First Design: Secure logging with privacy guarantees
+- Multi-Turn Conversations: Context-aware AI responses
+
+---
+
+## Features
+
+### For Researchers
+
+- Randomised Persona Assignment
+- Comprehensive Data Logging
+- Automated Consent Management
+- Post-Study Surveys
+- Privacy Enforcement Metrics (precision, recall, F1 score)
+- Withdrawal Support
+
+### For Participants
+
+- Clear study instructions
+- Persona profiles visible throughout session
+- Real-time privacy feedback
+- Session countdown timer
+- Natural conversation flow
+
+---
+## Project Structure
+
+dissertation-poc/
+│
+├── backend/
+│   ├── data/                  # Personas, assignments, leakage config
+│   ├── prisma/                # Database schema & migrations
+│   ├── python/                # PII detection scripts
+│   ├── results/               # Analysis outputs (figures, tables)
+│   ├── scripts/               # Data processing & export scripts
+│   ├── src/
+│   │   ├── controllers/       # API logic
+│   │   ├── services/          # Core logic (LLM, detection, enforcement)
+│   │   ├── routes/            # API endpoints
+│   │   ├── middleware/        # Validation, error handling
+│   │   └── server.js          # Entry point
+│   ├── test/                  # Unit & integration tests
+│   └── package.json
+│
+├── frontend/                  # React application (user study interface)
+│   ├── components/            # UI components (chat, consent, survey)
+│   ├── services/              # API communication
+│   └── App.jsx
+│
+├── README.md
+└── .gitignore
+
+---
+
+## Architecture
+
+### Technology Stack
+
+Backend:
+
+- Node.js
+- Express.js
+- PostgreSQL
+- Prisma ORM
+- Claude API
+
+Frontend:
+
+- React
+- Vite
+- React Markdown
+
+Testing:
+
+- Jest (34 tests)
+
+---
+
+### System Flow
+
+```
+
+1. User views information sheet
+2. User provides consent
+3. Session created + persona assigned
+4. Chat session begins (8 minutes)
+5. Message checked for PII
+6. If violation -> blocked
+7. If valid -> sent to AI
+8. Timer ends -> survey
+9. Survey submitted -> complete
+
+```
+
+---
+
+## Installation
+
+### Prerequisites
+
+- Node.js 18+
+- PostgreSQL
+- npm
+- API key
+
+---
+
+### Backend Setup
+
+```bash
+git clone <repository-url>
+cd dissertation-poc/backend
+
+npm install
+
+cp .env.example .env
+
+npx prisma generate
+npx prisma migrate deploy
+
+npm run seed
+npm start
+```
+
+Backend: [http://localhost:3001](http://localhost:3001)
+
+---
+
+### Frontend Setup
+
+```bash
+cd ../frontend
+
+npm install
+npm run dev
+```
+
+Frontend: [http://localhost:5173](http://localhost:5173)
+
+---
+
+## Configuration
+
+### Environment Variables
+
+```bash
+DATABASE_URL=postgresql://user:password@localhost:5432/dissertation_db
+
+ANTHROPIC_API_KEY=your_key_here
+CLAUDE_MODEL=claude-sonnet-4
+PRIVACY_MODE=true
+
+PORT=3001
+FRONTEND_URL=http://localhost:5173
+```
+
+---
+
+### Timer Configuration
+
+```javascript
+const TIMER_DURATION = 8 * 60;
+```
+
+---
+
+## Usage
+
+### Run Application
+
+```bash
+cd backend && npm start
+cd frontend && npm run dev
+```
+
+## Testing
+
+```bash
+npm test
+npm run test:persona
+npm run test:pii
+npm run test:functional
+```
+
+---
+
+### Test Coverage
+
+- Persona: 4 tests (100%)
+- PII Detection: 15 tests (~85%)
+- API: 15 tests (~95%)
+- Total: 34 tests (~90%)
+
+---
+
+### Metrics
+
+- Precision: 85.7%
+- Recall: 85.0%
+- F1 Score: 85.3%
+
+---
+
+## Privacy & Security
+
+### Guarantees
+
+- No model training on user data
+- Limited data retention
+- No personal identifiers sent to AI
+- Session-based tracking
+
+---
+
+### PII Detection
+
+- Email detection
+- Phone number patterns
+- Named entity heuristics
+- Keyword-based blocking
+
+---
+
+### Process
+
+1. Extract entities
+2. Normalise input
+3. Compare with persona
+4. Block or allow
+
+---
+
+### Limitations
+
+- Lowercase names (~10% miss rate)
+- Ambiguous abbreviations
+- Non-English names
+- Emerging slang
+
+## Results
+
+Analysis outputs (figures and tables) are generated by running:
+
+python backend/results/analysis.py
+
+Generated files are saved in:
+backend/results/dissertation_results/
+
+(Note: These files are excluded from version control.)
+
+## API Documentation
+
+### Base URL
+
+```
+http://localhost:3001/api
+```
+
+---
+
+### Example Endpoint
+
+POST /chat/message
+
+```json
+{
+  "prompt": "Hello",
+  "sessionId": "123",
+  "personaId": 1
+}
+```
+
+## Licensing
+
+This project uses the following third-party packages:
+
+### Backend
+- express — MIT
+- @prisma/client — Apache 2.0
+- @anthropic-ai/sdk — MIT
+- dotenv — BSD-2-Clause
+- cors — MIT
+- axios — MIT
+
+### Frontend
+- react — MIT
+- react-dom — MIT
+- react-markdown — MIT
+
+### Testing
+- jest — MIT
+
+All third-party packages were checked for licence compatibility before use.
+
+
+ADD PROJECT STRUCTURE

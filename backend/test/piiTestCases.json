@@ -1,0 +1,122 @@
+[
+  {
+    "id": "PII-001",
+    "description": "Persona 1 name (Leo Chen)",
+    "input": "Hi, my name is Leo Chen",
+    "personaId": 1,
+    "expectedAction": "allowed",
+    "shouldContainTemplate": "[PER_NAME]"
+  },
+  {
+    "id": "PII-002",
+    "description": "Persona 2 name (Aamir Iqbal)",
+    "input": "I'm Aamir Iqbal",
+    "personaId": 2,
+    "expectedAction": "allowed",
+    "shouldContainTemplate": "[PER_NAME]"
+  },
+  {
+    "id": "PII-003",
+    "description": "Persona 3 name (Rupert Calloway)",
+    "input": "My name is Rupert Calloway",
+    "personaId": 3,
+    "expectedAction": "allowed",
+    "shouldContainTemplate": "[PER_NAME]"
+  },
+  {
+    "id": "PII-004",
+    "description": "Persona 4 name (Kwame Mensah)",
+    "input": "Hi, I'm Kwame Mensah",
+    "personaId": 4,
+    "expectedAction": "allowed",
+    "shouldContainTemplate": "[PER_NAME]"
+  },
+  {
+    "id": "PII-005",
+    "description": "Persona 5 name (Mateo Kowalski)",
+    "input": "I'm Mateo Kowalski",
+    "personaId": 5,
+    "expectedAction": "allowed",
+    "shouldContainTemplate": "[PER_NAME]"
+  },
+  {
+    "id": "PII-006",
+    "description": "Persona organization (Leo - Nexus Digital)",
+    "input": "I work at Nexus Digital Solutions",
+    "personaId": 1,
+    "expectedAction": "allowed",
+    "shouldContainTemplate": "[ORG_NAME]"
+  },
+  {
+    "id": "PII-007",
+    "description": "Persona city (Aamir - Birmingham)",
+    "input": "I live in Birmingham",
+    "personaId": 2,
+    "expectedAction": "allowed",
+    "shouldContainTemplate": "[LOC_CITY]"
+  },
+  {
+    "id": "PII-008",
+    "description": "External name (should block)",
+    "input": "My friend Jason told me about this",
+    "personaId": 1,
+    "expectedAction": "blocked",
+    "expectedBlockCategory": "EXTERNAL"
+  },
+  {
+    "id": "PII-009",
+    "description": "Sensitive health information",
+    "input": "I have diabetes and need insulin",
+    "personaId": 1,
+    "expectedAction": "blocked",
+    "expectedBlockCategory": "SENSITIVE"
+  },
+  {
+    "id": "PII-010",
+    "description": "Persona email (Leo)",
+    "input": "Email me at leo.chen@nexussolutions.co.uk",
+    "personaId": 1,
+    "expectedAction": "allowed",
+    "shouldContainTemplate": "[CODE_EMAIL]"
+  },
+  {
+    "id": "PII-011",
+    "description": "Persona phone (Kwame)",
+    "input": "Call me on 07123 456789",
+    "personaId": 4,
+    "expectedAction": "allowed",
+    "shouldContainTemplate": "[CODE_PHONE]"
+  },
+  {
+    "id": "PII-012",
+    "description": "Lowercase name detection",
+    "input": "im leo from london",
+    "personaId": 1,
+    "expectedAction": "allowed",
+    "shouldContainTemplate": "[PER_NAME]"
+  },
+  {
+    "id": "PII-013",
+    "description": "External email (should block)",
+    "input": "Contact jason@example.com for details",
+    "personaId": 1,
+    "expectedAction": "blocked",
+    "expectedBlockCategory": "EXTERNAL"
+  },
+  {
+    "id": "PII-014",
+    "description": "No PII - general conversation",
+    "input": "What is the weather like today?",
+    "personaId": 1,
+    "expectedAction": "allowed",
+    "shouldNotBlock": true
+  },
+  {
+    "id": "PII-015",
+    "description": "Multiple persona attributes",
+    "input": "I'm Leo Chen, 28 years old, from London",
+    "personaId": 1,
+    "expectedAction": "allowed",
+    "shouldContainTemplate": "[PER_NAME]"
+  }
+]
