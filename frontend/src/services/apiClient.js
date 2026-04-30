@@ -8,7 +8,7 @@ import axios from "axios";
 const API_BASE = import.meta.env.VITE_API_URL || "http://localhost:3001";
 const API_URL = `${API_BASE}/api`;
 
-console.log("🔧 API Client Configuration:");
+console.log("API Client Configuration:");
 console.log("API Base:", API_BASE);
 console.log("API URL:", API_URL);
 

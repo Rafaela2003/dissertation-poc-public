@@ -46,9 +46,7 @@ export const getSession = async (req, res) => {
 // Information Sheet
 
 export const getInformationSheet = async (req, res) => {
-  console.log("\n" + "=".repeat(60));
   console.log("GET INFORMATION SHEET REQUEST");
-  console.log("=".repeat(60));
 
   try {
     console.log("Searching for active information sheet...");
@@ -72,13 +70,10 @@ export const getInformationSheet = async (req, res) => {
 
     res.json(infoSheet);
   } catch (error) {
-    console.error("\n" + "=".repeat(60));
     console.error("GET INFORMATION SHEET ERROR");
-    console.error("=".repeat(60));
     console.error("Error:", error);
     console.error("Error message:", error.message);
     console.error("Error stack:", error.stack);
-    console.error("=".repeat(60) + "\n");
 
     res.status(500).json({ error: "Failed to get information sheet" });
   }
@@ -305,7 +300,7 @@ export const submitSurvey = async (req, res) => {
     });
 
     console.log(
-      `📋 Survey completed: ${sessionId} (${responses.length} responses)`,
+      `Survey completed: ${sessionId} (${responses.length} responses)`,
     );
 
     res.json({ success: true, responses: savedResponses });

@@ -6,9 +6,7 @@ const prisma = new PrismaClient();
 
 export const assignPersona = async (req, res) => {
   try {
-    console.log("\n" + "=".repeat(70));
     console.log("PERSONA ASSIGNMENT REQUEST");
-    console.log("=".repeat(70));
     console.log("Timestamp:", new Date().toISOString());
     console.log("Request body:", req.body);
 
@@ -35,7 +33,6 @@ export const assignPersona = async (req, res) => {
         "   Persona Name:",
         existingSession.persona.data.PER.full_name,
       );
-      console.log("=".repeat(70) + "\n");
 
       return res.json({
         personaId: existingSession.personaId,
@@ -53,7 +50,6 @@ export const assignPersona = async (req, res) => {
 
     if (!personas || personas.length === 0) {
       console.error("No personas found in database");
-      console.log("=".repeat(70) + "\n");
       return res.status(500).json({
         error: "No personas available",
         message: "Please run: node scripts/migratePersonas.js",
@@ -95,17 +91,14 @@ export const assignPersona = async (req, res) => {
     console.log("\nSending response:");
     console.log("   Persona ID:", response.personaId);
     console.log("   Persona Name:", response.name);
-    console.log("=".repeat(70) + "\n");
 
     res.json(response);
   } catch (error) {
-    console.error("\n" + "=".repeat(70));
     console.error("PERSONA ASSIGNMENT ERROR");
-    console.error("=".repeat(70));
     console.error("Error:", error);
     console.error("Error message:", error.message);
     console.error("Error stack:", error.stack);
-    console.error("=".repeat(70) + "\n");
+
 
     res.status(500).json({
       error: "Failed to assign persona",

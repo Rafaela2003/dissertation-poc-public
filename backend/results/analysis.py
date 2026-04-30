@@ -37,9 +37,7 @@ CATEGORY_MAPPING = {
     "PHONE": "CODE",
 }
 
-print("=" * 70)
 print("RESEARCH STUDY DATA ANALYSIS")
-print("=" * 70)
 
 # STEP 1: LOAD DATA
 print("\n[1/13] Loading data...")
@@ -197,7 +195,7 @@ plt.grid(True, which='both', linestyle='--', linewidth=0.5, alpha=0.7)
 plt.minorticks_on()
 plt.tight_layout()
 plt.savefig('dissertation_results/01_funnel_chart.png', dpi=300, bbox_inches='tight')
-print(" Saved: 01_funnel_chart.png")
+print("Saved: 01_funnel_chart.png")
 
 # STEP 5: PRIVACY LEAKAGE OVERVIEW
 print("\n[5/13] Analyzing privacy leakage...")
@@ -262,7 +260,7 @@ ax2.legend(
 
 plt.tight_layout()
 plt.savefig('dissertation_results/02_leakage_overview.png', dpi=300, bbox_inches='tight')
-print(" Saved: 02_leakage_overview.png")
+print("Saved: 02_leakage_overview.png")
 
 
 # STEP 6: PII TYPES AND FREQUENCY
@@ -309,7 +307,7 @@ if len(pii_counter) > 0:
 
     plt.tight_layout()
     plt.savefig('dissertation_results/03_pii_categories.png', dpi=300, bbox_inches='tight')
-    print(" Saved: 03_pii_categories.png")
+    print("Saved: 03_pii_categories.png")
 
 # STEP 7: DIRECT VS INDIRECT LEAKAGE
 print("\n[7/13] Analyzing direct vs indirect leakage...")
@@ -353,7 +351,7 @@ for bar in bars:
 
 plt.tight_layout()
 plt.savefig('dissertation_results/04_direct_vs_indirect.png', dpi=300, bbox_inches='tight')
-print(" Saved: 04_direct_vs_indirect.png")
+print("Saved: 04_direct_vs_indirect.png")
 
 
 # STEP 8: SURVEY ANALYSIS
@@ -470,7 +468,7 @@ Accuracy: {accuracy:.3f} ({accuracy*100:.1f}%)
     plt.title('Confusion Matrix: PII Detection', fontsize=14, fontweight='bold')
     plt.tight_layout()
     plt.savefig('dissertation_results/08_confusion_matrix.png', dpi=300, bbox_inches='tight')
-    print(" Saved: 08_confusion_matrix.png")
+    print("Saved: 08_confusion_matrix.png")
     
     # Per-category metrics
     all_categories = set()
@@ -562,7 +560,7 @@ plt.grid(True, which='both', linestyle='--', linewidth=0.5, alpha=0.7)
 plt.minorticks_on()
 plt.tight_layout()
 plt.savefig('dissertation_results/05_leakage_progression.png', dpi=300, bbox_inches='tight')
-print("✓ Saved: 05_leakage_progression.png")
+print("Saved: 05_leakage_progression.png")
 
 # STEP 11: RESPONSE TIME ANALYSIS
 print("\n[11/13] Analyzing response times...")
@@ -593,7 +591,7 @@ Without PII Detection:
         plt.grid(axis='y', alpha=0.3)
         plt.tight_layout()
         plt.savefig('dissertation_results/06_response_time_comparison.png', dpi=300, bbox_inches='tight')
-        print("✓ Saved: 06_response_time_comparison.png")
+        print("Saved: 06_response_time_comparison.png")
 
 
 # STEP 12: EXPORT DATA TABLES
@@ -624,9 +622,7 @@ print(" Exported data tables")
 print("\n[13/13] Generating summary report...")
 
 with open('dissertation_results/ANALYSIS_SUMMARY.txt', 'w') as f:
-    f.write("=" * 70 + "\n")
     f.write("RESEARCH STUDY ANALYSIS SUMMARY\n")
-    f.write("=" * 70 + "\n\n")
     
     f.write("1. PARTICIPANT OVERVIEW\n")
     f.write(f"   Total Sessions: {total_sessions}\n")
@@ -661,16 +657,12 @@ with open('dissertation_results/ANALYSIS_SUMMARY.txt', 'w') as f:
         f.write(f"   Accuracy: {accuracy:.3f} ({accuracy*100:.1f}%)\n")
         f.write("\n")
     
-    f.write("=" * 70 + "\n")
     f.write("All visualizations saved in dissertation_results/\n")
-    f.write("=" * 70 + "\n")
 
-print("✓ Saved: ANALYSIS_SUMMARY.txt")
+print("Saved: ANALYSIS_SUMMARY.txt")
 
 # COMPLETION
-print("\n" + "=" * 70)
 print("ANALYSIS COMPLETE")
-print("=" * 70)
 print(f"""
 Generated Files:
   Visualizations: dissertation_results/*.png

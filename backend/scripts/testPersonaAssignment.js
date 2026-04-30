@@ -2,9 +2,7 @@ import axios from "axios";
 
 const API_BASE = "http://localhost:3001/api";
 
-console.log("\n" + "=".repeat(80));
 console.log("PERSONA ASSIGNMENT VALIDATION TEST");
-console.log("=".repeat(80) + "\n");
 
 async function createSession() {
   try {
@@ -54,7 +52,6 @@ async function testPersonaAssignment() {
 
   for (let i = 1; i <= numTests; i++) {
     console.log(`Test ${i}/${numTests}:`);
-    console.log("-".repeat(40));
 
     try {
       // Create a new session
@@ -120,9 +117,7 @@ async function testPersonaAssignment() {
     await new Promise((resolve) => setTimeout(resolve, 200));
   }
 
-  console.log("\n" + "=".repeat(80));
   console.log("TEST RESULTS SUMMARY");
-  console.log("=".repeat(80) + "\n");
 
   const successfulTests = results.filter((r) => r.success);
   const failedTests = results.filter((r) => !r.success);

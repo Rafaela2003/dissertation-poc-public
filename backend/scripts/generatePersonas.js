@@ -12,13 +12,13 @@ const usedPhones = new Set();
 
 // Main function to generate personas
 async function generateUniquePersonas() {
-  console.log(`\n=== Generating ${NUM_PERSONAS} Unique Personas ===\n`);
+  console.log(`\n Generating ${NUM_PERSONAS} Unique Personas \n`);
 
   const personas = [];
   const maxAttempts = 20; // Try up to 20 times per persona
 
   for (let i = 0; i < NUM_PERSONAS; i++) {
-    console.log(`\n--- Generating Persona ${i + 1}/${NUM_PERSONAS} ---`);
+    console.log(`\n Generating Persona ${i + 1}/${NUM_PERSONAS} `);
 
     let attempts = 0;
     let personaGenerated = false;
@@ -83,11 +83,11 @@ async function generateUniquePersonas() {
   // Save personas
   personaService.savePersonas(personas);
 
-  console.log("\n=== Generation Complete ===");
-  console.log(`✅ ${personas.length} unique personas saved`);
+  console.log("\n Generation Complete ");
+  console.log(` ${personas.length} unique personas saved`);
 
   // Print summary
-  console.log("\n=== Persona Summary ===");
+  console.log("\n Persona Summary ");
   personas.forEach((p, idx) => {
     console.log(
       `${idx + 1}. ${p.PER.full_name} (${p.DEM.age}, ${p.DEM.nationality}, ${p.DEM.job_title}, ${p.LOC.city})`,

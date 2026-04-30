@@ -55,8 +55,8 @@ CATEGORIES TO INCLUDE:
 - LOC: city (UK city), country (United Kingdom)
 - ORG: organisation (fictional but realistic, e.g., "Riverside Medical Centre", "TechFlow Solutions Ltd")
 - DEM: age, nationality, job_title, education_level
-- DATETIME: birth_year (2024 - age), career_start_year
-- QUANTITY: income_range (realistic for job/age)
+- DATE: birth_year (2024 - age), career_start_year
+- MONEY: income_range (realistic for job/age)
 - PROFILE: background (2-3 sentences), goals (specific to situation), communication_style
 
 FORBIDDEN:
@@ -72,8 +72,8 @@ OUTPUT FORMAT (JSON only, no markdown):
   "LOC": {"city": "CityName", "country": "United Kingdom"},
   "ORG": {"organisation": "CompanyName Ltd"},
   "DEM": {"age": 35, "nationality": "British", "job_title": "Job Title", "education_level": "Undergraduate degree"},
-  "DATETIME": {"birth_year": 1989, "career_start_year": 2011},
-  "QUANTITY": {"income_range": "£35,000-£45,000"},
+  "DATE": {"birth_year": 1989, "career_start_year": 2011},
+  "MONEY": {"income_range": "£35,000-£45,000"},
   "PROFILE": {"background": "Brief background...", "goals": "Specific goals...", "communication_style": "Style description..."}
 }`;
 
@@ -283,9 +283,7 @@ Be strict on realism - if income/age/job don't align, reject it.`;
     }
   }
 
-  /**
-   * Get a random persona from the loaded personas
-   */
+  /** Get a random persona from the loaded personas */
   getRandomPersona() {
     if (this.personas.length === 0) {
       throw new Error("No personas available. Please generate personas first.");
@@ -295,9 +293,7 @@ Be strict on realism - if income/age/job don't align, reject it.`;
     return this.personas[randomIndex];
   }
 
-  /**
-   * Get persona by ID
-   */
+  /** Get persona by ID */
   getPersonaById(id) {
     const persona = this.personas.find((p) => p.id === id);
     if (!persona) {
@@ -306,16 +302,12 @@ Be strict on realism - if income/age/job don't align, reject it.`;
     return persona;
   }
 
-  /**
-   * Get all personas
-   */
+  /** Get all personas*/
   getAllPersonas() {
     return this.personas;
   }
 
-  /**
-   * Reload personas from file
-   */
+  /** Reload personas from file */
   reloadPersonas() {
     this.personas = this.loadPersonas();
     console.log(`Reloaded ${this.personas.length} personas`);

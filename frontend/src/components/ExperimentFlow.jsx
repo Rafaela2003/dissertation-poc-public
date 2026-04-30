@@ -20,7 +20,7 @@ export default function ExperimentFlow() {
 
   const initialiseSession = async () => {
     try {
-      console.log("🔄 Initialising experiment session...");
+      console.log("Initialising experiment session...");
 
       // Check localStorage
       const existingSessionId = localStorage.getItem("experiment_session_id");
