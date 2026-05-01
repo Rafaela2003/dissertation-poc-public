@@ -1,5 +1,7 @@
-// Persona Testing Panel - a component to test the persona assignment logic by creating multiple sessions and checking the assigned personas.
-// This is useful for validating that the persona assignment is working correctly and that different sessions receive different personas as expected.
+// Persona Testing Panel - a component to test the persona assignment logic 
+// by creating multiple sessions and checking the assigned personas.
+// This is useful for validating that the persona assignment is working correctly 
+// and that different sessions receive different personas as expected.
 
 import React, { useState } from "react";
 import { createSession } from "../services/experimentApi";

@@ -425,7 +425,7 @@ print("   Save as: dissertation_results/ground_truth_labeled.csv")
 
 # Check if labeled file exists
 if os.path.exists('dissertation_results/ground_truth_labeled.csv'):
-    print("\n✓ Found labeled ground truth file!")
+    print("\n Found labeled ground truth file!")
     
     from sklearn.metrics import precision_score, recall_score, f1_score, accuracy_score, confusion_matrix
     

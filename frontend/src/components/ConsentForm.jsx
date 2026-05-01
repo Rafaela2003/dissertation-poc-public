@@ -1,4 +1,5 @@
-// Consent form component for displaying consent statements and handling user consent/decline actions
+// Consent form component for displaying consent statements 
+// and handling user consent/decline actions
 
 import React, { useState, useEffect } from "react";
 import { getConsentStatements, submitConsent } from "../services/experimentApi";

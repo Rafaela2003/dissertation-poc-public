@@ -1,4 +1,5 @@
-// Instructions component - displays the instructions to participants before they proceed to the chat interface.
+// Instructions component - displays the instructions to participants before 
+// they proceed to the chat interface.
 
 import React from "react";
 

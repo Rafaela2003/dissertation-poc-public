@@ -1,4 +1,5 @@
-// Study Complete component - displays a completion message to participants after they finish the post-interaction survey.
+// Study Complete component - displays a completion message to participants 
+// after they finish the post-interaction survey.
 // It also provides an option to download the chat transcript for their records
 // and contact information for the researcher in case they have questions about the study.
 
@@ -21,7 +22,7 @@ export default function StudyComplete({ sessionId }) {
         return;
       }
 
-      let text = "=== Chat Transcript ===\n\n";
+      let text = " Chat Transcript \n\n";
 
       data.transcript.forEach((msg) => {
         text += `[User]: ${msg.user}\n`;

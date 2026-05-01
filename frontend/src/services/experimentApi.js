@@ -1,6 +1,7 @@
 // Service module for interacting with the experiment-related API endpoints.
 // This module uses Axios to send HTTP requests to the backend server and provides functions
-// for session management, information sheet retrieval, consent handling, chat interaction and survey management.
+// for session management, information sheet retrieval, 
+// consent handling, chat interaction and survey management.
 // It also includes interceptors for logging requests and responses for debugging purposes.
 
 import axios from "axios";

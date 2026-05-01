@@ -1,4 +1,4 @@
-// Starts the server, sets up middleware and routes, and handles errors
+// Starts the server, sets up middleware and routes and handles errors
 
 import dotenv from "dotenv";
 dotenv.config();

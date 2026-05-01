@@ -1,6 +1,6 @@
 // Validation middleware for Express.js
 // This module provides functions to validate incoming requests for the chat API,
-// including session ID, prompt content, and persona ID.
+// including session ID, prompt content and persona ID.
 // It also includes an Express middleware function to apply these validations to chat requests.
 
 export const validateSessionId = (sessionId) => {
@@ -39,7 +39,7 @@ export const validatePrompt = (prompt) => {
 // Validate persona ID (optional, must be an integer between 1 and 100 if provided)
 export const validatePersonaId = (personaId) => {
   if (personaId === null || personaId === undefined) {
-    return true; // Optional field
+    return true; 
   }
 
   const id = parseInt(personaId);

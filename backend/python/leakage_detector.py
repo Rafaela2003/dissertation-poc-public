@@ -433,10 +433,8 @@ def analyze():
         
         severity = calculate_severity(all_detections)
         
-        print("="*60)
         print(f"Total detections: {len(all_detections)}")
         print(f"Severity: {severity}")
-        print("="*60)
         
         result = {
             'text': text,

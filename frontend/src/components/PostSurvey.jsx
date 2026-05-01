@@ -1,5 +1,7 @@
-// Post Survey component - displays the post-interaction survey to participants after they finish the chat interaction.
-// It fetches the survey questions from the backend, renders them, and handles the submission of responses.
+// Post Survey component - displays the post-interaction survey to participants 
+// after they finish the chat interaction.
+// It fetches the survey questions from the backend, renders them
+// and handles the submission of responses.
 // It also ensures that all required questions are answered before allowing submission.
 
 import React, { useState, useEffect } from "react";

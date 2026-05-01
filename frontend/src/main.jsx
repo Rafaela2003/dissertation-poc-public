@@ -1,4 +1,5 @@
-// The entry point of the React application. It imports the main App component and renders it to the DOM.
+// The entry point of the React application. It imports the main App component 
+// and renders it to the DOM.
 // It also imports the global CSS styles for the application.
 
 import React from "react";

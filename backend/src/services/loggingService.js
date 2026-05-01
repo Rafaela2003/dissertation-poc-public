@@ -1,4 +1,5 @@
-// Logging Service - handles all logging of interactions, including templated interactions and blocked messages
+// Logging Service - handles all logging of interactions, 
+// including templated interactions and blocked messages
 
 import { PrismaClient } from "@prisma/client";
 

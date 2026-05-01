@@ -1,4 +1,5 @@
-// Information Sheet component - displays the information sheet to participants before they proceed to the consent form.
+// Information Sheet component - displays the information sheet to participants 
+// before they proceed to the consent form.
 
 import React, { useState, useEffect } from "react";
 import {

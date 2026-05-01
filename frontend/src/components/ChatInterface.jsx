@@ -7,7 +7,7 @@ import {
   withdrawFromStudy,
 } from "../services/experimentApi";
 
-const TIMER_DURATION = 8 * 60; // 1 minute in seconds
+const TIMER_DURATION = 8 * 60; // 8 minute in seconds
 
 export default function ChatInterface({
   sessionId,

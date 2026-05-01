@@ -1,4 +1,5 @@
-// Privacy Enforcement Service - Analyses user input for potential PII and enforces rules based on persona
+// Privacy Enforcement Service - Analyses user input for potential PII 
+// and enforces rules based on persona
 
 import sensitiveCategoryDetector from "./sensitiveCategoryDetector.js";
 import templateLogger from "./templateLogger.js";
@@ -10,7 +11,8 @@ class PrivacyEnforcementService {
     console.log("Privacy Enforcement Service Initialised");
   }
 
-  // Main enforcement function - checks detected entities against persona values and decides to allow or block
+  // Main enforcement function - checks detected entities against persona values 
+  // and decides to allow or block
   async enforce(text, personaId, personaData = null) {
     console.log("Running privacy enforcement pipeline...");
     console.log(`Input: "${text}"`);

@@ -58,7 +58,7 @@ This system enables researchers to conduct user studies involving conversational
 ## Project Structure
 
 ```text
-dissertation-poc/
+dissertation-poc-public/
 ├── backend/
 │   ├── data/              # Personas, assignments, leakage config
 │   ├── prisma/            # Database schema & migrations
@@ -142,7 +142,7 @@ Testing:
 
 ```bash
 git clone <repository-url>
-cd dissertation-poc/backend
+cd dissertation-poc-public/backend
 
 npm install
 
@@ -151,7 +151,7 @@ cp .env.example .env
 npx prisma generate
 npx prisma migrate deploy
 
-npm run seed
+npm prisma db seed
 npm start
 ```
 
@@ -279,7 +279,6 @@ python backend/results/analysis.py
 Generated files are saved in:
 backend/results/dissertation_results/
 
-(Note: These files are excluded from version control.)
 
 ## API Documentation
 
@@ -324,6 +323,3 @@ This project uses the following third-party packages:
 - jest — MIT
 
 All third-party packages were checked for licence compatibility before use.
-
-
-ADD PROJECT STRUCTURE
